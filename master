@@ -1,0 +1,25 @@
+<?php
+
+// require __DIR__ . '/vendor/autoload.php';
+
+// use Symfony\Component\Console\Input\ArgvInput;
+// use Symfony\Component\Console\Output\ConsoleOutput;
+// use Pmions\Console\PmionsApplication;
+
+// $pmions = new PmionsApplication();
+// $output = new ConsoleOutput();
+
+// $pmions->doRun(new ArgvInput(), $output);
+
+
+// use Sienekib\Layers\Utils\Config;
+
+// new Config([
+// 	// 'driver' => 'mysql',
+// 	'host' => 'localhost',
+// 	'database' => 'cardapio',
+// 	'username' => 'root',
+// 	'password' => '',
+// 	// 'charset' => 'utf8mb4',
+// 	// 'persistent' => true
+// ]);

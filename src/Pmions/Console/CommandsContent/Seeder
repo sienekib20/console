@@ -1,0 +1,15 @@
+<?php 
+
+use Sienekib\Layers\Facade\DB;
+
+class \$class
+{
+	public function seed()
+	{
+		DB::records('\$table', [
+			
+			// Write Your Code Here
+
+		]);
+	}
+}

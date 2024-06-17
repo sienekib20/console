@@ -1,0 +1,22 @@
+<?php
+
+use Sienekib\Layers\Schema\Migration;
+
+class \$class extends Migration
+{
+	public function up()
+	{
+		$this->createTable('\$table', function($table) {
+			$table->increments('\$id');
+			// Write Your Code Here
+
+			$table->timestamps();
+		});
+	}
+
+	public function down()
+	{
+		$this->dropTable('\$table');
+	}
+}
+
