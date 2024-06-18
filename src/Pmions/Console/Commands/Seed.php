@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Pmions\Console\Commands;
 
+use Factory\Seeder\DatabaseSeeders;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -29,9 +30,13 @@ class Seed extends Command
         $finder = new Finder();
 
         if ($input->getOption('all')) {
-            return $this->runAllSeeders($output, $filesystem, $finder, $directory);
+
+            $databaseSeeder = new DatabaseSeeders();
+            $databaseSeeder->execute();
+           // return $this->runAllSeeders($output, $filesystem, $finder, $directory);
         } elseif ($template = $input->getOption('template')) {
-            return $this->runTemplateSeeder($output, $filesystem, $finder, $directory, $template);
+            //return $this->runTemplateSeeder($output, $filesystem, $finder, $directory, $template);
+            $output->writeln('Not Implements Yet.');
         } else {
             $output->writeln('Please specify an option to run seeders.');
             return Command::FAILURE;

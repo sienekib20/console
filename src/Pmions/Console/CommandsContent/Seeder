@@ -1,5 +1,7 @@
 <?php 
 
+namespace Factory\Seeder;
+
 use Sienekib\Layers\Facade\DB;
 
 class \$class
