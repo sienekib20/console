@@ -12,7 +12,6 @@ class Pmions
     {
         $pmions = new PmionsApplication();
         $output = new ConsoleOutput();
-        
         $pmions->doRun(new ArgvInput(), $output);
     }
 }
