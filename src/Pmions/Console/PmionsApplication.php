@@ -6,6 +6,7 @@ namespace Pmions\Console;
 use Symfony\Component\Console\Application;
 use Pmions\Console\Commands\Make;
 use Pmions\Console\Commands\Migrate;
+use Pmions\Console\Commands\RunServer;
 use Pmions\Console\Commands\Seed;
 
 class PmionsApplication extends Application
@@ -16,5 +17,6 @@ class PmionsApplication extends Application
         $this->add(new Make());
         $this->add(new Migrate());
         $this->add(new Seed());
+        $this->add(new RunServer());
     }
 }
